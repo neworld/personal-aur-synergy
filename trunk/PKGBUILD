@@ -36,11 +36,11 @@ sha512sums=('01497fe362395dd9d26d44f7468ca5c01ee7cd2f590b6c28a67e094f969fdca3b8f
             '158d218faa8d8c33cbea935a9dcad4bcf79309eb485bfea107cd160f894d1090db6fea6e60827509b985ff9a7493020fc819e5e150bdac85f5547e755f3ad9ec'
             'f9c124533dfd0bbbb1b5036b7f4b06f7f86f69165e88b9146ff17798377119eb9f1a4666f3b2ee9840bc436558d715cdbfe2fdfd7624348fae64871f785a1a62'
             '9663a11b915e10e60317e732a4d1191e8f8ff19176994c27dd20aa445daab7565bd624e5575c9c639d144293879fbe8376834a076723f778fd322ebd1c9f2029'
-            'fd654879fd24c253801188294c652ab4bd34dec24f8b1a76ccd33dfe2bd98aa64d225eec7a2e5d8f75eb7a14aca59aff1b80dbdf7a3ff8c040d7b1430c2d4ac4')
+            '72c06f0700b61a4e96e2da1b3f8cbf63e3cc52d756a4839a4a181a926fc69de017f0d7d1e6560f3ded848497de7abd48e6684c7910d0201fbe8b5f11253bb028')
 
 prepare() {
   cd synergy-core-${pkgver}-stable
-  mkdir build
+  # mkdir build`
 
   # get rid of shitty bundled gtest and gmock
   patch -Np1 < "${srcdir}/use-system-libs.patch"
